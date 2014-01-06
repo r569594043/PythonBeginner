@@ -44,6 +44,18 @@ for i in range(0):
 else:
 	print("no data")
 
+i = 0
+while i < 10:
+	print(i)
+	if(i == 5):
+		break
+	i += 1
+
+while False:
+	print("data")
+else:
+	print("no data")
+
 
 try:
 	print(a)
