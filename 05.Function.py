@@ -64,3 +64,13 @@ print(func.__doc__)
 
 l = lambda num1, num2: num1 + num2
 print(l(2, 3)) # 5
+
+def func2(func, num1, num2):
+	return func(num1, num2)
+
+def func(num1, num2):
+	return num1 + num2
+
+print(func2(func, 3, 4)) # 7
+
+print(func2(lambda a, b: a - b, 7, 4)) # 3
