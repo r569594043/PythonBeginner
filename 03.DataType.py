@@ -91,6 +91,8 @@ multiple_line_str = """
 """
 print(multiple_line_str)
 
+print("*"*10) # **********
+
 # bytes
 print('hello world'.encode('utf-8')) # b'hello world'
 
