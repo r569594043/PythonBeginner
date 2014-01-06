@@ -61,6 +61,8 @@ try:
 	print(a)
 except Exception as ex:
 	print(ex)
+finally:
+	print('finally')
 
 try:
 	print(var)
