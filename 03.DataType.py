@@ -54,6 +54,11 @@ print(11//2) # 5
 print(-11//2) # -6
 print(11.0//2) # 5.0
 print(2**8) # 256
+a = 1
+a += 1
+print(a) # 2
+# Error
+# a++
 
 # str
 print(len("hello world")) # 11
