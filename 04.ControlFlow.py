@@ -8,5 +8,63 @@ else:
 	print("It's a even number")
 
 
-for i in range(0, 10):
-	print("hello world")
+var = "5"
+
+if var.isnumeric() and int(var) % 2 == 1:
+	print("It's a odd number")
+elif var.isnumeric() and int(var) % 2 == 0:
+	print("It's a even number")
+else:
+	print("It's not a number")
+
+print(5 or False) # 5
+print(0 and 1) # 0
+print(5 or 7) # 5
+print(5 and 7) # 7
+
+print(not 0) # True
+
+
+for i in range(10):
+	print("hello world " + str(i))
+
+l = [1, 2, 3, 4, 5]
+
+for e in l:
+	print(e)
+
+for i in range(len(l)):
+	print(l[i])
+
+for i in range(0, 10, 2):
+	print(i)
+
+for i in range(0):
+	print(i)
+else:
+	print("no data")
+
+
+try:
+	print(a)
+except Exception as ex:
+	print(ex)
+
+try:
+	print(var)
+except:
+	print("error")
+else:
+	print("There is no error")
+
+
+try:
+	print(var)
+except:
+	print("error")
+else:
+	print("There is no error")
+
+x = 3
+print('even' if x % 2 == 0 else 'odd') # odd
+
