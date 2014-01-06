@@ -91,11 +91,19 @@ multiple_line_str = """
 """
 print(multiple_line_str)
 
+# bytes
+print('hello world'.encode('utf-8')) # b'hello world'
+
+# None
+print(not not None) # False
+print(None == None) # True
+print(None is None) # True
+
 a = None
 
 # Error
-#if b is None:
-#	print('b is None')
+#if w is None:
+#	print('w is None')
 
 if a is None:
 	print('a is None')
@@ -103,8 +111,6 @@ if a is None:
 if a == None:
 	print('a is None')
 
-# bytes
-print('hello world'.encode('utf-8')) # b'hello world'
 
 # list
 l = ['a', 'simple', 'list', 'with', 'six', 'elements']
@@ -199,6 +205,7 @@ s.add(1)
 s.add(3)
 s.add(3)
 print(s) # {1, 3}
+print(len(s)) # 2
 s.update({3, 6, 9}, {1, 2, 3, 5, 8, 13})
 print(s) # {1, 2, 3, 5, 6, 8, 9, 13}
 s.update([10, 20, 30])
@@ -215,3 +222,17 @@ print(s.pop()) # 3
 print(s) # {5, 6, 8, 9, 10, 13, 20, 30}
 s.clear()
 print(s) # set()
+
+print(not not s) # False
+
+# dict
+
+d = {"a": 1, "b": 2, "c": 3}
+print(d) # {'a': 1, 'c': 3, 'b': 2}
+d["a"] = 0
+print(d) # {'a': 0, 'b': 2, 'c': 3}
+d["d"] = 4
+print(d) # {'d': 4, 'b': 2, 'c': 3, 'a': 0}
+print("d" in d) # True
+print(len(d)) # 4
+print(not not {}) # False
