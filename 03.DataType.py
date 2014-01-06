@@ -236,3 +236,8 @@ print(d) # {'d': 4, 'b': 2, 'c': 3, 'a': 0}
 print("d" in d) # True
 print(len(d)) # 4
 print(not not {}) # False
+
+# bool
+print(0 == False) # True
+print(1 == True) # True
+print(2 == True) # False
