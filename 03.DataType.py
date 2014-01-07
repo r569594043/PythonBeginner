@@ -1,4 +1,4 @@
-#-*- encoding: utf-8 -*-
+#-*- coding: utf-8 -*-
 
 # Date Types
 print(type(1)) # <class 'int'>
