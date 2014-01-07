@@ -25,6 +25,8 @@ def func(**args):
 
 func(name = "rxb", age = "24")
 
+func(**{"name": "rxb", "age": "24"})
+
 
 def func(name, age):
 	print('name: ' + name, 'age: ' + age)
