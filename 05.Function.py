@@ -1,5 +1,9 @@
 #-*- coding: utf-8 -*-
-
+'''
+	Functions
+	See Also: 	http://docs.python.org/3/tutorial/controlflow.html#defining-functions
+				http://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions
+'''
 # Error
 #def func():
 
