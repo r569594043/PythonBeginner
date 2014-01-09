@@ -1,4 +1,8 @@
 #-*- coding: utf-8 -*-
+'''
+	Built-in Types
+	See Also: http://docs.python.org/3/library/stdtypes.html
+'''
 
 # Date Types
 print(type(1)) # <class 'int'>
@@ -82,6 +86,10 @@ name = 'Riley'
 age = 24
 print("Hello %s" % name) # Hello Riley
 print("Hello {0}".format(name)) # Hello Riley
+print("name: {0}, age: {1}".format("riley", 24)) # name: riley, age: 24
+print("name: {}, age: {}".format("riley", 24)) # name: riley, age: 24
+print("name: {name}, age: {age}".format(name = "riley", age = 24)) # name: riley, age: 24
+print("name: {0}, age: {1}, name again: {0}".format("riley", 24)) # name: riley, age: 24, name again: riley
 print("Hello %s,Age %d" % (name, age)) # Hello Riley,Age 24
 
 # Error
