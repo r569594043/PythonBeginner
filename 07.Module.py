@@ -1,4 +1,8 @@
-#-*- encoding: utf-8 -*-
+#-*- coding: utf-8 -*-
+'''
+	Modules
+	See Also: http://docs.python.org/3/tutorial/modules.html
+'''
 
 import ModuleA
 from ModuleB import func
