@@ -1,5 +1,8 @@
 #-#- coding: utf-8 -#-
-
+'''
+	Classes
+	See Also: http://docs.python.org/3/tutorial/classes.html
+'''
 class Animal():
 	"""Animal Class"""
 
@@ -120,3 +123,7 @@ print(issubclass(People, Animal)) # False
 print(issubclass(Mix, Animal)) # True
 print(isinstance(xiaoming, People)) # True
 print(isinstance(xiaoming, Animal)) # False
+'''
+	Built-in Functions
+	See Also: http://docs.python.org/3/library/functions.html
+'''
