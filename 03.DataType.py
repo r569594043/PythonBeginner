@@ -106,6 +106,10 @@ print(multiple_line_str)
 
 print("*"*10) # **********
 
+print("a,b,c,d,e".split(',')) # ['a', 'b', 'c', 'd', 'e']
+
+print(",".join(['a', 'b', 'c', 'd', 'e'])) # a,b,c,d,e
+
 # bytes
 print('hello world'.encode('utf-8')) # b'hello world'
 
