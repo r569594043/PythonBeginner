@@ -378,6 +378,7 @@ print(json.dumps(d)) # {"age": 26, "name": "rxb"}
 # Serialize ``obj`` as a JSON formatted stream to ``fp``
 # json.dump
 # Deserialize ``fp``
+# json.load
 
 import hashlib
 
@@ -386,6 +387,34 @@ m.update('hello world'.encode('utf-8'))
 print(m.hexdigest()) # 5eb63bbbe01eeed093cb22bb8f5acdc3
 m.update(open('c:/windows/system32/cmd.exe', 'rb').read())
 print(m.hexdigest()) # 3b37a087052ba07ede4d74a638c92b85
+
+import base64
+a = base64.b64encode('Hello World'.encode('utf-8'))
+print(a.decode())
+print(base64.b64decode(a).decode())
+
+import uuid
+# uuid1: Generate a UUID from a host ID, sequence number, and the current time.
+# uuid3: Generate a UUID from the MD5 hash of a namespace UUID and a name.
+# uuid4: Generate a random UUID.
+# uuid5: Generate a UUID from the SHA-1 hash of a namespace UUID and a name.
+print(uuid.uuid1())
+print(uuid.uuid3(uuid.NAMESPACE_DNS, 'test'))
+print(uuid.uuid4())
+print(uuid.uuid5(uuid.NAMESPACE_DNS, 'testme'))
+
+
+import pickle
+# Write a pickled representation of obj to the open file object file.
+# dump
+# Read a pickled object representation from the open file object file and
+# return the reconstituted object hierarchy specified therein.
+# load
+l = ['a', 'b', 'c', 'd']
+p = pickle.dumps(l)
+print(p) # b'\x80\x03]q\x00(X\x01\x00\x00\x00aq\x01X\x01\x00\x00\x00bq\x02X\x01\x00\x00\x00cq\x03X\x01\x00\x00\x00dq\x04e.'
+print(pickle.loads(p)) # ['a', 'b', 'c', 'd']
+
 
 
 
