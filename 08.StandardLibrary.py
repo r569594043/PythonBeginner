@@ -351,7 +351,10 @@ print(os.path.join(r'c:\windows', 'system32', 'cmd.exe')) # c:\windows\system32\
 print(os.path.join('c:/windows/', 'cmd.exe')) # c:/windows/cmd.exe
 
 import sys
-
+'''
+	System-specific parameters and functions
+	See Also: http://docs.python.org/3/library/sys.html
+'''
 print(sys.argv) # ['C:\\Users\\RileyRen\\Desktop\\PythonBeginner\\08.StandardLibrary.py']
 sys.stdout.write('Hello World') # Hello World
 sys.stdout.flush()
@@ -359,6 +362,10 @@ sys.stdout.flush()
 # sys.stderr
 
 import shutil
+'''
+	High-level file operations
+	See Also: http://docs.python.org/3/library/shutil.html
+'''
 # abspath
 # chown
 # copy
@@ -370,7 +377,10 @@ print(shutil.disk_usage('c:/')) # usage(total=106690072576, used=69967917056, fr
 # rmtree
 
 import json
-
+'''
+	JSON encoder and decoder
+	See Also: http://docs.python.org/3/library/json.html
+'''
 d = json.loads('{"name": "rxb", "age": 26}')
 print(d) # {'name': 'rxb', 'age': 26}
 print(d['age']) # 26
@@ -381,7 +391,10 @@ print(json.dumps(d)) # {"age": 26, "name": "rxb"}
 # json.load
 
 import hashlib
-
+'''
+	Secure hashes and message digests
+	See Also: http://docs.python.org/3/library/hashlib.html
+'''
 m = hashlib.md5()
 m.update('hello world'.encode('utf-8'))
 print(m.hexdigest()) # 5eb63bbbe01eeed093cb22bb8f5acdc3
@@ -394,6 +407,10 @@ print(a.decode())
 print(base64.b64decode(a).decode())
 
 import uuid
+'''
+	UUID objects according to RFC 4122
+	See Also: http://docs.python.org/3/library/uuid.html
+'''
 # uuid1: Generate a UUID from a host ID, sequence number, and the current time.
 # uuid3: Generate a UUID from the MD5 hash of a namespace UUID and a name.
 # uuid4: Generate a random UUID.
@@ -405,6 +422,10 @@ print(uuid.uuid5(uuid.NAMESPACE_DNS, 'testme'))
 
 
 import pickle
+'''
+	Python object serialization
+	See Also: http://docs.python.org/3/library/pickle.html
+'''
 # Write a pickled representation of obj to the open file object file.
 # dump
 # Read a pickled object representation from the open file object file and
