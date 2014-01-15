@@ -58,8 +58,8 @@ def main():
 	logging.config.fileConfig(LOG_CONFIG)
 	logger = logging.getLogger("weipai")
 	logger.info('begin analysis...')
-	f = open('weipai.downlist', 'a+')
-	for i in range(0,50):
+	f = open('weipai.downlist', 'w')
+	for i in range(0, 100):
 		logger.info('start analysis page: {0}'.format(i + 1))
 		params = {
 			'page': i + 1
